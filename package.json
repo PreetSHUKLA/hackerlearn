@@ -9,6 +9,17 @@
   "scripts": {
     "start": "node bin/hackerlearn.js"
   },
+  "files": [
+    "bin",
+    "css",
+    "data/courses.json",
+    "data/taxonomy.json",
+    "data/verified_videos_index.json",
+    "js",
+    "index.html",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "hackerlearn",
     "hackertube",

@@ -3,7 +3,8 @@
 > **Anti-Algorithm, High-Signal Technical Learning Platform**  
 > 12 rigorous, university-caliber computer science roadmaps curated from 6,454+ peer-recommended lectures across 20 years of Hacker News.
 
-[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-brightgreen)](#-quick-start)
+[![NPM Version](https://img.shields.io/npm/v/hackerlearn?color=red&logo=npm)](https://www.npmjs.com/package/hackerlearn)
+[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-brightgreen)](#-how-to-access)
 [![Zero Login](https://img.shields.io/badge/Auth-Zero%20Login%20Required-blue)](#-how-progress-is-saved)
 [![Offline First](https://img.shields.io/badge/Storage-100%25%20Local%20%26%20Private-orange)](#-how-progress-is-saved)
 [![Curriculum](https://img.shields.io/badge/Curriculum-12%20Domains%20%7C%20400%2B%20Hours-purple)](#-the-12-master-roadmaps)
@@ -16,45 +17,40 @@ Modern learning platforms are choked with SEO optimization, 30-second superficia
 
 **Hacker Learn** takes a different approach:
 * **0% Algorithmic Slop or Sponsored Noise**: Every single lesson is sourced strictly from the [HackerTube](https://hacker-tube.org/) archive (the most celebrated lectures in Hacker News history).
-* **Zero Dependency Terminal Launch**: Run `hackerlearn` in your terminal and your learning dashboard immediately opens in your browser.
+* **Zero Dependency Terminal Launch**: Run `npx hackerlearn` in your terminal and your learning dashboard immediately opens in your browser.
 * **100% Local & Private**: No account creation, no email address, no remote tracking. Your progress, notes, and custom curricula are saved directly on your machine.
 * **University-Grade Sequence**: Zero prerequisite skips. Every roadmap takes you step-by-step from foundational first principles to production-level architecture.
 
 ---
 
-## ⚡ Quick Start: Launch in 5 Seconds
+## ⚡ How to Access (2 Ways)
 
-Open your terminal and run:
+### 1. The NPX Way (Zero Install — Recommended)
 
-```bash
-hackerlearn
-```
+No cloning or installation required. Open any terminal (macOS, Windows, Linux) and run:
 
-Your default browser will immediately pop up with the full interactive dashboard at `http://localhost:8383`.
-
-### Installation Options
-
-#### Option A: Run via Python / Pip (Recommended)
-```bash
-# Clone the repository
-git clone https://github.com/your-username/hackerlearn.git
-cd hackerlearn
-
-# Install the hackerlearn command
-pip install -e .
-
-# Launch anywhere!
-hackerlearn
-```
-
-#### Option B: Run via Node.js / NPX (Zero Install)
 ```bash
 npx hackerlearn
 ```
 
-#### Option C: Direct Double-Click (No Installation)
-* **Windows**: Double-click `hackerlearn.bat` (or open `index.html`).
-* **macOS / Linux**: Run `./hackerlearn.sh`.
+Your default browser will immediately pop up with the full interactive dashboard at `http://localhost:8383`.
+
+---
+
+### 2. The GitHub Way (Clone & Run Locally)
+
+Clone the repository and run it locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/preetshukla/hackerlearn.git
+cd hackerlearn
+
+# Launch the app
+npm start
+```
+
+*Tip: You can also simply double-click `index.html` (or `hackerlearn.bat` on Windows / `./hackerlearn.sh` on macOS/Linux) to run completely offline without Node.js.*
 
 ---
 
@@ -62,9 +58,9 @@ npx hackerlearn
 
 Hacker Learn does **not** have accounts, passwords, or servers collecting your data.
 
-* When `hackerlearn` launches, it runs on a dedicated local origin (`http://localhost:8383`).
+* When Hacker Learn launches, it runs on a dedicated local origin (`http://localhost:8383`).
 * Your completed lessons, timestamps, markdown study notes, custom-built curricula, and theme settings are saved to your browser's local sandbox (`localStorage`).
-* When you close your browser or turn off your computer and run `hackerlearn` tomorrow, **everything is exactly where you left it**.
+* When you close your browser or turn off your computer and run `npx hackerlearn` tomorrow, **everything is exactly where you left it**.
 * You can also export your entire study notebook and course progress to a single JSON file at any time.
 
 ---
@@ -87,7 +83,7 @@ An exhaustive, battle-tested masterclass for mastering modern machine learning a
 * **Module 4: Attention Mechanisms, Tokenizers & Modern LLMs**: Master the self-attention architecture that powers ChatGPT, Claude, and Gemini, build tokenizers, and write a GPT from scratch.
 * **Module 5: Reinforcement Learning & Alignment (RLHF)**: Learn how agents interact with environments, maximize rewards, and align modern models with human feedback.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -104,7 +100,7 @@ Step beneath the layers of high-level virtual machines. Start with discrete logi
 * **Module 3: C++ Memory Mechanics & High Performance**: Deep dive into memory allocators, cache-friendly data structures, and zero-cost abstractions.
 * **Module 4: Modern Systems: Rust, Zig & ECS Architecture**: Compare zero-cost abstractions, compiler optimizations, memory ownership, and modern language design.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -120,7 +116,7 @@ Explore the software layer that arbitrates between hardware and applications. Fr
 * **Module 2: Kernel Abstractions, Virtualization & Production Debugging**: Investigate how modern multicore, NVMe, and memory architectures challenge conventional OS abstractions, and master crash debugging.
 * **Module 3: Concurrency Runtimes: From Event Loops to Kernel Threads**: Order concurrency from simplest to most advanced: asynchronous event loops, actor concurrency, and kernel M:N threading.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -136,7 +132,7 @@ Master the design of systems that span multiple machines across unreliable netwo
 * **Module 2: Infrastructure, Caching & Log-Structured Replication**: Study data center infrastructure, cache replacement mechanics, and conflict-free replicated data types.
 * **Module 3: Distributed Resilience & Deterministic Testing**: Learn how top infrastructure teams engineer resilient systems that survive real-world cluster crashes.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -151,7 +147,7 @@ Demystify mathematical cryptography and real-world reverse engineering. Explore 
 * **Module 1: Mathematical Cryptography Foundations**: Understand the mathematical trapdoor functions and discrete logarithm problems behind modern encryption.
 * **Module 2: Reverse Engineering, Protocol Hacking & System Vulnerabilities**: Learn formal exploit mechanics, hardware reverse engineering, mobile platform security, and systemic vulnerability economics.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -167,7 +163,7 @@ Learn how human-readable code transforms into machine-executable instructions. S
 * **Module 2: Lexing, Parsing, Evaluators & Type Systems**: Build scanners, implement metacircular interpreters from first principles, and design type systems that reject bugs at compile time.
 * **Module 3: Interpreter Runtimes, JIT Barriers & LLVM Code Generation**: Inspect interpreter runtime bottlenecks, C extension leaks, and LLVM intermediate representations for dynamic language backends.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -182,7 +178,7 @@ Discover the intersection of pure mathematics, hardware limitations, and visual 
 * **Module 1: Differential Geometry of Curves & Splines**: Master parametric polynomial curves, linear interpolation (lerp), and geometric continuity.
 * **Module 2: Procedural Math, Shaders & Console Graphics Hacks**: See the 4k demoscene hook, learn raymarching from Inigo Quilez, and dissect console graphics architecture.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -197,7 +193,7 @@ Write software that thrives over years of evolving requirements. Learn Rich Hick
 * **Module 1: Foundational Simplicity & Clean Design**: Establish the mental models and concrete heuristics for simple, maintainable software design.
 * **Module 2: Testing Architecture, Invariants & Real-World Domain Complexity**: Test systems effectively without fragile unit mocks, handle difficult real-world domain rules, and manage schema evolution.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -213,7 +209,7 @@ Unlock the visual, physical, and algorithmic intuition behind the mathematics of
 * **Module 2: Core Algorithms & Data Structures**: Visualize classic sorting algorithms and understand modern cache-friendly hash table implementations.
 * **Module 3: Wave Mechanics, Sampling, FFT & Quantum Computing**: Explore physical wave mechanics, continuous frequency decomposition, discrete sampling, and quantum linear algebra.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -228,7 +224,7 @@ Learn where our modern computing ecosystem came from, ordered strictly chronolog
 * **Module 1: 1960s–1970s: The Foundations (Bell Labs & Xerox PARC)**: Direct insights from the computer scientists who invented the foundations of our industry.
 * **Module 2: 1980s–2000s: The Microcomputer Boom, Web Wars & Open Source**: Relive the pivotal battles that created personal computing, open-source software, and modern tech culture.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -243,7 +239,7 @@ Pick up the wire strippers and the oscilloscope probes. Start with mechanical co
 * **Module 1: From Mechanical Logic to Breadboard CPUs**: Start with physical/mechanical logic, AC to DC rectification, and build a programmable CPU on breadboards.
 * **Module 2: High-Speed Signals, Protocols & PCB Signal Integrity**: Generate analog video signals with discrete counters, decode USB packets, and master high-speed PCB return paths.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
@@ -259,45 +255,7 @@ Look past framework dogmas to understand how the browser engine, runtime event l
 * **Module 2: Architectural Evolution: React, Svelte, Turbolinks & LiveView**: Understand component architecture, virtual DOM diffing, compile-time reactivity, and the HTML-over-the-wire revolution.
 * **Module 3: Authentication Security & Web Performance**: Secure user identities and optimize web applications for instant page loads.
 
-*(Launch the app with `hackerlearn` to view the complete lesson schedule and start learning.)*
-
----
-
-## 📦 Distribution & Publishing Guide
-
-Want to distribute Hacker Learn to your team, friends, or the open-source community so anyone can run `hackerlearn` from their terminal? Follow these steps:
-
-### 1. Distribute via PyPI (`pip install hackerlearn`)
-1. Create a free account on [PyPI](https://pypi.org/).
-2. Install build tools:
-   ```bash
-   pip install --upgrade build twine
-   ```
-3. Build the package distribution archives:
-   ```bash
-   python -m build
-   ```
-4. Upload to PyPI:
-   ```bash
-   twine upload dist/*
-   ```
-5. Anyone in the world can now type:
-   ```bash
-   pip install hackerlearn
-   hackerlearn
-   ```
-
-### 2. Distribute via NPM (`npx hackerlearn`)
-1. Create a free account on [npmjs.com](https://www.npmjs.com/).
-2. In your terminal:
-   ```bash
-   npm login
-   npm publish
-   ```
-3. Anyone in the world can now simply run without installing anything:
-   ```bash
-   npx hackerlearn
-   ```
+*(Launch the app with `npx hackerlearn` to view the complete lesson schedule and start learning.)*
 
 ---
 
