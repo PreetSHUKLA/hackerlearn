@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hackerlearn"
+version = "1.0.0"
+authors = [
+  { name="Hacker Learn" },
+]
+description = "Anti-algorithm, high-signal technical learning platform curated from 6,454+ Hacker News recommendations"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+hackerlearn = "hackerlearn.cli:main"

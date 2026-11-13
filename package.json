@@ -1,0 +1,25 @@
+{
+  "name": "hackerlearn",
+  "version": "1.0.0",
+  "description": "Anti-algorithm, high-signal technical learning platform curated from 6,454+ Hacker News recommendations",
+  "main": "bin/hackerlearn.js",
+  "bin": {
+    "hackerlearn": "./bin/hackerlearn.js"
+  },
+  "scripts": {
+    "start": "node bin/hackerlearn.js"
+  },
+  "keywords": [
+    "hackerlearn",
+    "hackertube",
+    "hacker-news",
+    "computer-science",
+    "learning-platform",
+    "education"
+  ],
+  "author": "Hacker Learn Community",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
