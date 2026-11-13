@@ -10,7 +10,7 @@
   // State Management
   // =========================================================================
   const state = {
-    courses: window.HACKER_COURSES || [],
+    courses: window.HACKER_COURSES || (typeof COURSES_DATA !== 'undefined' ? COURSES_DATA : (window.COURSES_DATA || [])),
     videos: window.HACKER_VIDEOS || [],
     videoMap: {},
     activeView: 'courses',
@@ -1095,7 +1095,26 @@
   // =========================================================================
   // Application Startup
   // =========================================================================
-  function init() {
+  async function init() {
+    // Resilient fallback: ensure courses data is loaded whether served via http:// or file://
+    if (!state.courses || state.courses.length === 0) {
+      if (typeof window.HACKER_COURSES !== 'undefined' && window.HACKER_COURSES.length > 0) {
+        state.courses = window.HACKER_COURSES;
+      } else if (typeof COURSES_DATA !== 'undefined' && COURSES_DATA.length > 0) {
+        state.courses = COURSES_DATA;
+      } else if (typeof window !== 'undefined' && window.location && window.location.protocol.startsWith('http')) {
+        try {
+          const res = await fetch('data/courses.json');
+          if (res.ok) {
+            state.courses = await res.json();
+            window.HACKER_COURSES = state.courses;
+          }
+        } catch (e) {
+          console.warn('Fallback fetch data/courses.json failed:', e);
+        }
+      }
+    }
+
     buildVideoMap();
     applyTheme(state.theme);
     renderCoursesGrid();
